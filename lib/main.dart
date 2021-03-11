@@ -56,16 +56,22 @@ class _HomePageState extends State<HomePage> {
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
               //Campos
-              TextField(
-                controller: _nameDeviceController,
-                decoration: InputDecoration(
-                  labelText: 'NameDevice',
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: TextField(
+                  controller: _nameDeviceController,
+                  decoration: InputDecoration(
+                    labelText: 'NameDevice',
+                  ),
                 ),
               ),
-              TextField(
-                controller: _eventController,
-                decoration: InputDecoration(
-                  labelText: 'Event',
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: TextField(
+                  controller: _eventController,
+                  decoration: InputDecoration(
+                    labelText: 'Event',
+                  ),
                 ),
               ),
               //Boton de enviar
